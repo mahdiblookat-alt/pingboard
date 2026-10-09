@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pingboard"
+version = "0.1.0"
+description = "A tiny uptime monitor that keeps a history of every check"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+pingboard = "pingboard.cli:main"
+
+[tool.setuptools]
+packages = ["pingboard"]
